@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name = 'viewport' content='width=device-width, initial-scale=1'>
+        <title>Tips</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+        <link rel="shortcut icon" href="#" />
+        <link href="https://fonts.googleapis.com/css?family=Mali%7cMontserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+        <header>
+                <a class="skip-main" href="#main" onclick="tab()">Skip to main content</a>
+                <div class = "drop">
+                                <nav class="navbar">
+                                        <div class="dropdown">
+                                        <button class="dropbtn" onclick="myFunction()">Tips
+                                                <i class="fa fa-caret-down"></i>
+                                        </button>
+                        
+                                        </div> 
+                                </nav>
+                                <div class="dropdown-content" id="myDropdown">
+                                        <a href="index.html">Home</a>
+                                        <a href="album.html">Album</a>
+                                        <a href="tips.html">Tips</a>
+                                        <a href="weapons.html">Weapons</a>
+                                </div>
+                                </div>
+                                <nav class="navtop">
+                                        <ul>
+                                        <li> <i class="fas fa-align-left"></i> </li>
+                                        <li><a href = "index.html">Home</a></li>
+                                        <li><a href = "album.html">Album</a></li>
+                                        <li  class = "current"><a href = "tips.html">Tips</a></li>
+                                        <li><a href = "weapons.html">Weapons</a></li>
+                                </ul>
+                                </nav>
+            <h1 class="hcenter">Tips for Hunting</h1>
+        </header>
+        <main id = "main" tabindex="-1">
+              
+<!--                 <div>
+                <nav class="navleft">
+                  <ul>
+                    <li><a href="#article1">Hunting</a></li>
+                    <li><a href="#article2">Looking for Traces</a></li>
+                    <li><a href="#article3">Upgrading <br/> Equipment <br/> <br/> </a></li>
+                    <li><a href="#link2official">More tips</a></li>
+                  </ul>
+                </nav>
+                </div> -->
+        <div class="flex-container">
+                <div style="flex-grow: 1"></div>
+                <div style="flex-grow: 8">
+                        <button class="accordion"> Hunting </button>
+                        <div class="panel Mali">
+                        <div class="img_p">
+                        <article class = "article">
+                        <p>Once you have discovered a large monster and attacked it with your weapon, the hunt is on!</p>
+                        <p>Each monster has unique traits and attacks that it will utilize in combat. Watch each monster's behavior carefully, and learn when to keep a safe distance, or when you should try luring it out of dangerous areas to ones more suited to combat.</p>
+                        
+                        </article>
+
+                                <a href = "images/ht.jpg"><img class = "picfull" src="images/ht.jpg" alt="hunting"/></a>
+                        </div>
+                        </div>
+                        
+                        
+                        <button class="accordion"> Looking for Traces </button>
+                        <div class="panel Mali">
+                        <div class="img_p">
+                        <article class = "article">
+                                <p>Many of your quest objectives will consist of hunting large monsters. However, before you can hunt any monster you'll have to find it, first.</p>
+                                <p>Monsters leave behind tracks or traces as they move about the environment, which you can follow to track a monster's location. Whenever you get close to monster tracks, your scoutflies will glow and lead you to them.</p>
+                                
+                                <p> You can gather tracks by pressing B next to them. As you gather more tracks, your scoutflies' ability to find the same monster's tracks will improve, and they will eventually be able to lead you right to the monster itself!</p>
+                                
+                        </article>
+                                <a href = "images/lft.jpg"><img class = "picfull" src="images/lft.jpg" alt="trace"/></a>
+                        </div>
+                        </div>
+
+                        
+                        <button class="accordion"> Upgrade Equipment </button>
+                        <div class="panel Mali">
+                        <div class="img_p">
+                        <article class = "article">
+                        <p>You can use the materials and zenny obtained from hunting to upgrade your weapons and armor.<p>
+                        
+                        <p>You can upgrade your equipment by visiting the Smithy in Astera. Regularly upgrading your armor will make it easier for you to take on even the toughest of monsters!</p>
+                        </article>
+
+                                <a href = "images/up.jpg"><img class = "picfull" src="images/up.jpg" alt="upgrading"/></a>
+
+                        </div>
+                        </div>
+                </div>
+                <div style="flex-grow: 1"></div>
+                </div>
+        </main>
+              <footer>
+                <div id="ex1" class="modal">
+                <p>You will leave here and go to the <a href="http://game.capcom.com/manual/MHW_PC/en/steam/" style="color: red">Official Web.</a></p>
+                <a href="#" rel="modal:close">Close</a>
+                </div>
+                <p>See more tips at the official website <a href="#ex1" rel="modal:open" class = "link2official">MONSTER HUNTER: WORLD Official Web Manual.</a></p>
+        
+       
+              </footer>
+        <script>
+                        /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                        if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                        }
+                }
+                }
+        </script>
+        <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                  acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight){
+                      panel.style.maxHeight = null;
+                    } else {
+                      panel.style.maxHeight = panel.scrollHeight + "px";
+                    } 
+                  });
+                }
+
+                function tab() {
+                        var acc = document.getElementsByClassName("accordion");
+                        for (i = 0; i < acc.length; i++) {
+                        acc[i].classList.toggle("active");
+                        var panel = acc[i].nextElementSibling;
+                        if (panel.style.maxHeight){
+                        panel.style.maxHeight = null;
+                        } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                        } 
+                }
+                }
+        </script>
+</body>
+</html>
